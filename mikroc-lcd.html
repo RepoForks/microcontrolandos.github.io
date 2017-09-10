@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Microcontrolandos</title>
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">-->
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.0.0-beta.3/dist/css/bootstrap-material-design.min.css" integrity="sha384-k5bjxeyx3S5yJJNRD1eKUMdgxuvfisWKku5dwHQq9Q/Lz6H8CyL89KF52ICpX4cL" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/md.css" />
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+        <script defer src="https://use.fontawesome.com/0a2607915f.js"></script>
+    </head>
+     <body class="home">
+        <!-- Facebook -->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <img src="/img/logo.png" width="120" height="120" />
+                </div>
+                <div class="description exo2">
+                    <p>Microcontrolandos</p>
+                </div>
+                <ul id="navbar" class="nav justify-content-center">
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+                          
+                        
+                        <li class="nav-item "><a class="link-blue" href="/">Home</a></li>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+                          
+                        
+                        <li class="nav-item "><a class="link-blue" href="/about/">Sobre</a></li>
+                    
+                    <li class="nav-item"><a id="searchModalButton" href="#searchModal"><i class="fa fa-2x fa-search"></i></a></li>
+                </ul>                
+            </div>
+        </header>             
+        <div class="container">
+            <div id="content" class="col-md-9">
+                <div class="post-content col-md-12">
+    <div class="row banner">
+        <img src="/img/mikroc-banner.png">
+    </div>
+    <div class="row">
+
+    </div>
+    <div class="row">
+            
+    </div>
+    <div class="row">
+        <p>Tutorial sobre como programar um simples display de LCD usando o compilador MikroC PRO for PIC.</p>
+
+<p>O MikroC possui uma biblioteca para comunicar com os display LCD (HD44780) usando apenas 4 pinos.</p>
+
+<p>O LCD possui os seguintes pinos:<br />
+<code class="highlighter-rouge">RS</code>: Este pino indica qual registro deve ser selecionado. <code class="highlighter-rouge">0</code> estamos selecionando o registro de instruções. <code class="highlighter-rouge">1</code> estamos selecionado o registro de dados;<br />
+<code class="highlighter-rouge">RW</code>: Este pino indica se é uma operação de leitura ou escrita. <code class="highlighter-rouge">0</code> quer dizer que é uma operação de escrita. <code class="highlighter-rouge">1</code> quer dizer que é uma operação de leitura;<br />
+<code class="highlighter-rouge">E</code>: Este pino indica que estamos habilitando o display para alguma operação de leitura ou escrita. <code class="highlighter-rouge">1</code> indica que estamos habilitando.<br />
+<code class="highlighter-rouge">D4</code> a <code class="highlighter-rouge">D7</code>: São os pinos dos dados, do menos significativo ao mais significativo;</p>
+
+<p>Primeiramente precisamos definir quais pinos devem ser conectados:</p>
+
+<p><img src="/assets/mikroc-lcd-esquema.gif" alt="" /></p>
+
+<p>Para definir que pinos do microcontrolador ligam a que pinos do LCD usamos a diretiva <code class="highlighter-rouge">sbit</code>. <code class="highlighter-rouge">sbit</code> é usado para apelidar um bit de algum registro. Junto com <code class="highlighter-rouge">sbit</code> devemos usar a diretiva <code class="highlighter-rouge">at</code> para determinar qual bit do registro estamos apelidando. Veja um exemplo:</p>
+
+<div class="language-c highlighter-rouge"><pre class="codehilite"><code><span class="n">sbit</span> <span class="n">LCD_RS</span> <span class="n">at</span> <span class="n">RB4_bit</span><span class="p">;</span>
+</code></pre></div>
+
+<p>Neste exemplo estamos chamando o bit <code class="highlighter-rouge">4</code> do registro <code class="highlighter-rouge">PORTB</code> de <code class="highlighter-rouge">LCD_RS</code>. Assim no código podemos simplesmente usar <code class="highlighter-rouge">LCD_RS</code> em vez <code class="highlighter-rouge">PORTB.B4</code>.</p>
+
+<p>No caso da biblioteca LCD, existem nomes pré-definidos que <strong>obrigatoriamente</strong> devemos usar.</p>
+
+<p>Estes são os nomes:</p>
+
+<div class="language-c highlighter-rouge"><pre class="codehilite"><code><span class="c1">//Usados nos registros que definem o estado de um pino.
+</span><span class="n">sbit</span> <span class="n">LCD_RS</span> <span class="n">at</span> <span class="n">RB4_bit</span><span class="p">;</span>
+<span class="n">sbit</span> <span class="n">LCD_EN</span> <span class="n">at</span> <span class="n">RB5_bit</span><span class="p">;</span>
+<span class="n">sbit</span> <span class="n">LCD_D4</span> <span class="n">at</span> <span class="n">RB0_bit</span><span class="p">;</span>
+<span class="n">sbit</span> <span class="n">LCD_D5</span> <span class="n">at</span> <span class="n">RB1_bit</span><span class="p">;</span>
+<span class="n">sbit</span> <span class="n">LCD_D6</span> <span class="n">at</span> <span class="n">RB2_bit</span><span class="p">;</span>
+<span class="n">sbit</span> <span class="n">LCD_D7</span> <span class="n">at</span> <span class="n">RB3_bit</span><span class="p">;</span>
+
+<span class="c1">//usados nos registros que definem a direção de um pino (entrada ou saída).
+</span><span class="n">sbit</span> <span class="n">LCD_RS_Direction</span> <span class="n">at</span> <span class="n">TRISB4_bit</span><span class="p">;</span>
+<span class="n">sbit</span> <span class="n">LCD_EN_Direction</span> <span class="n">at</span> <span class="n">TRISB5_bit</span><span class="p">;</span>
+<span class="n">sbit</span> <span class="n">LCD_D4_Direction</span> <span class="n">at</span> <span class="n">TRISB0_bit</span><span class="p">;</span>
+<span class="n">sbit</span> <span class="n">LCD_D5_Direction</span> <span class="n">at</span> <span class="n">TRISB1_bit</span><span class="p">;</span>
+<span class="n">sbit</span> <span class="n">LCD_D6_Direction</span> <span class="n">at</span> <span class="n">TRISB2_bit</span><span class="p">;</span>
+<span class="n">sbit</span> <span class="n">LCD_D7_Direction</span> <span class="n">at</span> <span class="n">TRISB3_bit</span><span class="p">;</span>
+</code></pre></div>
+
+<p>Feito isso, precisamos de algumas funções para que possamos inicializar e escrever no LCD. Aqui estão elas:</p>
+
+<p><code class="highlighter-rouge">void Lcd_Init()</code>: Inicializa o display LCD. Nenhuma outra função desta biblioteca deve vim antes desta função;</p>
+
+<p><code class="highlighter-rouge">void Lcd_Out(char row, char column, char *text)</code>: Utilize esta função para escrever um texto no display a partir de uma determinada linha e coluna;
+    * <code class="highlighter-rouge">row</code>: indica em qual linha vamos escrever. Começa a partir do 1;
+    * <code class="highlighter-rouge">column</code>: indica em qual coluna vamos escrever. Começa a partir do 1;
+    * <code class="highlighter-rouge">text</code>: é o texto que queremos escrever. Podemos passar uma String ou alocar um vetor de caracteres.</p>
+
+<p><code class="highlighter-rouge">void Lcd_Out_Cp(char *text)</code>: O mesmo que a função anterior, mas o texto é escrito a partir da posição atual do cursor;</p>
+
+<p><code class="highlighter-rouge">void Lcd_Chr(char row, char column, char out_char)</code>: Utilize esta função para escrever um caractere no display a partir de uma determinada linha e coluna;
+    * <code class="highlighter-rouge">row</code>: indica em qual linha vamos escrever. Começa a partir do 1;
+    * <code class="highlighter-rouge">column</code>: indica em qual coluna vamos escrever. Começa a partir do 1;
+    * <code class="highlighter-rouge">out_char</code>: é o caractere que queremos escrever.</p>
+
+<p><code class="highlighter-rouge">void Lcd_Chr_Cp(char out_char)</code>: O mesmo que a função anterior, mas o caractere é escrito a partir da posição atual do cursor;</p>
+
+<p><code class="highlighter-rouge">void Lcd_Cmd(char out_char)</code>: Envia algum comando para o display;<br />
+    * <code class="highlighter-rouge">out_char</code>: é um valor que devemos passar correspondendo a algum comando.</p>
+
+<p>Veja a lista de comandos:</p>
+
+<p><code class="highlighter-rouge">_LCD_FIRST_ROW</code>: Move o cursor para a primeira linha;<br />
+<code class="highlighter-rouge">_LCD_SECOND_ROW</code>: Move o cursor para a segunda linha;<br />
+<code class="highlighter-rouge">_LCD_THIRD_ROW</code>: Move o cursor para a terceira linha;<br />
+<code class="highlighter-rouge">_LCD_FOURTH_ROW</code>: Move o cursor para a quarta linha;<br />
+<code class="highlighter-rouge">_LCD_CLEAR</code>: Limpa o display;<br />
+<code class="highlighter-rouge">_LCD_RETURN_HOME</code>: Move o cursor para o início;<br />
+<code class="highlighter-rouge">_LCD_CURSOR_OFF</code>: Oculta o cursor;<br />
+<code class="highlighter-rouge">_LCD_UNDERLINE_ON</code>: Exibe o cursor;<br />
+<code class="highlighter-rouge">_LCD_BLINK_CURSOR_ON</code>: Faz o cursor ficar piscando;<br />
+<code class="highlighter-rouge">_LCD_MOVE_CURSOR_LEFT</code>: Move o cursor para a esquerda;<br />
+<code class="highlighter-rouge">_LCD_MOVE_CURSOR_RIGHT</code>: Move o cursor para a direita;<br />
+<code class="highlighter-rouge">_LCD_TURN_ON</code>: Desliga o display;<br />
+<code class="highlighter-rouge">_LCD_TURN_OFF</code>: Liga o display;<br />
+<code class="highlighter-rouge">_LCD_SHIFT_LEFT</code>: Desloca todos os caracteres exibidos para a esquerda;<br />
+<code class="highlighter-rouge">_LCD_SHIFT_RIGHT</code> Desloca todos os caracteres exibidos para a direita;</p>
+
+<p>Agora é com vocês!!!</p>
+ 
+    </div>
+    
+</div>
+
+            </div>
+            <div id="widgets" class="col-md-3">
+
+            </div>
+        </div>
+
+        <!-- Modais -->
+        <div id="searchModal">
+            <div class="close-searchModal modal-close">
+                <i class="fa fa-2x fa-close"></i>
+            </div>
+            <form>
+                <input type="text" class="form-control" id="searchBox" placeholder="Buscar...">
+            </form>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/popper.js@1.12.5/dist/umd/popper.js" integrity="sha384-KlVcf2tswD0JOTQnzU4uwqXcbAy57PvV48YUiLjqpk/MJ2wExQhg9tuozn5A1iVw" crossorigin="anonymous"></script>
+        <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>   -->
+        <script src="https://unpkg.com/bootstrap-material-design@4.0.0-beta.3/dist/js/bootstrap-material-design.js" integrity="sha384-hC7RwS0Uz+TOt6rNG8GX0xYCJ2EydZt1HeElNwQqW+3udRol4XwyBfISrNDgQcGA" crossorigin="anonymous"></script>
+        <script src="/js/animatedModal.min.js"></script>
+        <script src="/js/jquery.pin.js"></script>
+        <script src="/js/main.js"></script>
+</html>

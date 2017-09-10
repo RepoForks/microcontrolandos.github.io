@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Microcontrolandos</title>
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">-->
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.0.0-beta.3/dist/css/bootstrap-material-design.min.css" integrity="sha384-k5bjxeyx3S5yJJNRD1eKUMdgxuvfisWKku5dwHQq9Q/Lz6H8CyL89KF52ICpX4cL" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/md.css" />
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+        <script defer src="https://use.fontawesome.com/0a2607915f.js"></script>
+    </head>
+     <body class="home">
+        <!-- Facebook -->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <img src="/img/logo.png" width="120" height="120" />
+                </div>
+                <div class="description exo2">
+                    <p>Microcontrolandos</p>
+                </div>
+                <ul id="navbar" class="nav justify-content-center">
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+                          
+                        
+                        <li class="nav-item "><a class="link-blue" href="/">Home</a></li>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+                          
+                        
+                        <li class="nav-item "><a class="link-blue" href="/about/">Sobre</a></li>
+                    
+                    <li class="nav-item"><a id="searchModalButton" href="#searchModal"><i class="fa fa-2x fa-search"></i></a></li>
+                </ul>                
+            </div>
+        </header>             
+        <div class="container">
+            <div id="content" class="col-md-9">
+                <div class="post-content col-md-12">
+    <div class="row banner">
+        <img src="/img/pic-rda5807.png">
+    </div>
+    <div class="row">
+
+    </div>
+    <div class="row">
+            
+    </div>
+    <div class="row">
+        <p><a href="https://drive.google.com/file/d/0B_-qufAUxAJLWVJmVEdHT1VWMlk/view">RDA5807P</a> é um circuito integrado que é capaz de sintonizar emissoras de rádio FM, operando na faixa de 76MHz até 108MHz.</p>
+
+<h3 id="caractersticas">CARACTERÍSTICAS</h3>
+
+<ul>
+  <li>Duas bandas de frequência;</li>
+  <li>Mono ou Stereo;</li>
+  <li>Indicador de força do sinal (RSSI);</li>
+  <li>Controle de volume;</li>
+  <li>Comunicação I2C;</li>
+  <li>Tensão de alimentação: 5V.</li>
+</ul>
+
+<h3 id="vantagens">VANTAGENS</h3>
+
+<p>Este chip possui as mesmas características do <a href="https://tiagohm.github.io/microcontrolandos/pic-tea5767">TEA5767</a>. A vantagem de utilizá-lo é que eu encontrei uma placa pronta para utilizar, precisando apenas conectar os fios, ao contrário do <a href="https://tiagohm.github.io/microcontrolandos/pic-tea5767">TEA5767</a> que precisa soldar os fios e correr o risco de destruir a plaquinha. Outra vantagem do <code class="highlighter-rouge">RDA5807P</code> é que é possível controlar o volume da saída, mesmo utilizando fones de ouvido, o som é muito alto.</p>
+
+<h3 id="funcionamento">FUNCIONAMENTO</h3>
+
+<p>Possui 4 registradores internos de 16 bits, utilizados para sua configuração, como a frequência atual, volume, seleção da banda, ativar o modo de busca, entre outros. Para realizar a operação de escrita, basta enviar o endereço do dispositivo (<code class="highlighter-rouge">0x20</code>) e os 8 bytes.</p>
+
+<p><img src="/assets/pic-rda5807-wreg.png" alt="" /></p>
+
+<p>Para poder sintonizar uma frequência, devemos escrever nos bits <code class="highlighter-rouge">CHAN</code>, setar o bit <code class="highlighter-rouge">TUNE</code> e enviar os todos os bytes. Podemos calcular o valor da frequência através dessa fórmula: <code class="highlighter-rouge">F = SPACE * CHAN + (87000 ou 76000)</code>.</p>
+
+<p>Para realizar uma busca, devemos definir a direção da busca (pra cima ou pra baixo) definindo um valor para o bit <code class="highlighter-rouge">SEEKUP</code>. Também devemos setar o bit <code class="highlighter-rouge">SEEK</code>.</p>
+
+<p>Também possui 2 registradores de 16 bits, que são utilizados para leitura, informando a frequência atual, a força do sinal captado e contendo vários bits de sinalização.</p>
+
+<p><img src="/assets/pic-rda5807-rreg.png" alt="" /></p>
+
+<h3 id="cdigo">CÓDIGO</h3>
+
+<script src="https://gist.github.com/tiagohm/69bfa031786f903471e0dd8fd7e75285.js"></script>
+
+<p><img src="/assets/pic-rda5807-teste.jpg" alt="" /></p>
+ 
+    </div>
+    
+</div>
+
+            </div>
+            <div id="widgets" class="col-md-3">
+
+            </div>
+        </div>
+
+        <!-- Modais -->
+        <div id="searchModal">
+            <div class="close-searchModal modal-close">
+                <i class="fa fa-2x fa-close"></i>
+            </div>
+            <form>
+                <input type="text" class="form-control" id="searchBox" placeholder="Buscar...">
+            </form>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/popper.js@1.12.5/dist/umd/popper.js" integrity="sha384-KlVcf2tswD0JOTQnzU4uwqXcbAy57PvV48YUiLjqpk/MJ2wExQhg9tuozn5A1iVw" crossorigin="anonymous"></script>
+        <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>   -->
+        <script src="https://unpkg.com/bootstrap-material-design@4.0.0-beta.3/dist/js/bootstrap-material-design.js" integrity="sha384-hC7RwS0Uz+TOt6rNG8GX0xYCJ2EydZt1HeElNwQqW+3udRol4XwyBfISrNDgQcGA" crossorigin="anonymous"></script>
+        <script src="/js/animatedModal.min.js"></script>
+        <script src="/js/jquery.pin.js"></script>
+        <script src="/js/main.js"></script>
+</html>

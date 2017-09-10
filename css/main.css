@@ -1,0 +1,250 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Exo+2:200|Montserrat:200|Passion+One');
+
+.passion-one {
+    font-family: 'Passion One', cursive;
+}
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+.exo2 {
+    font-family: 'Exo 2', sans-serif;
+}
+
+/* Geral */
+a {
+    cursor: pointer;
+    text-decoration: none !important;
+}
+.home {
+    background:#f5f5f5;
+}
+.fa {
+    cursor: pointer;
+}
+
+/* Links */
+a.link-blue, a.link-orange {
+    color: #404040 !important;
+}
+a.link-blue:hover {
+    color: #2bb2dd !important;
+}
+a.link-orange:hover {
+    color: #EC644B !important;
+}
+
+/* Header */
+.header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.header .logo {
+    text-align: center;
+}
+.header .description {
+    text-align: center;
+    color: #b1b1b1;
+    text-transform: uppercase;
+    padding: 8px 0px;
+    font-size: 2.5rem;
+}
+.header .search {
+    padding-top: 30px;
+}
+.header .search .form-group, 
+.header .search input {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+#navbar {
+    background: #f5f5f5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 1;
+    width: 100% !important;
+    left: 0px !important;
+}
+.header #navbar .nav-item {
+    position: relative;
+    display: inline-block;
+    margin: 0 20px;
+    vertical-align: top;
+}
+.header #navbar .nav-item a {
+    padding: 11px 0;
+    display: block;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    color: #4A4A4A;
+    font-size: 14px;
+    font-weight: bold;
+}
+.header #navbar .nav-item.active a {
+    border-bottom: 3px solid #2bb2dd;
+}
+#searchModalButton {
+    color: #cacaca;
+}
+
+/* PostCard */
+#content > div.row:nth-child(2n+1) {
+    background: #f0f0f0;
+}
+.post-card {
+    padding: 20px;
+}
+.post-card .banner {
+    float: left;
+    height: auto;
+}
+.post-card .banner img {
+    border-radius: 2px;
+    width: 100%;
+    height: auto;
+}
+.post-card .content {
+    float: right;
+    height: 100%;
+}
+.post-card .info {
+    color: #a0a0a0;
+    float: left;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0;
+    margin: 10px 0 20px;
+    width: 100%;
+}
+.post-card .description {
+    color: #666;
+    float: left;
+    font-size: 18px;
+    letter-spacing: 0.4px;
+    line-height: 24px;
+    margin-bottom: 40px;
+    width: 100%;
+    margin-top: 10px;
+}
+.post-card .read-more a {
+    border: 1px solid #EC644B;
+    padding: 5px;
+    border-radius: 5px;
+    background: #EC644B;
+    color: #FFF !important;
+}
+.post-card .categories a {
+    color: white;
+    background: #1e87f0;
+    padding: 2px 5px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10pt;
+}
+.post-card .social {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.post-card .post-bottom {
+
+}
+
+/* Post */
+.post-content {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.5;
+    color: #24292e;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+.post-content .banner img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Download Button */
+div[dwb] {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.dw-button {
+    width: 200px;
+    height: 70px;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.1);
+}
+.dw-button a {
+    text-decoration: none;
+}
+.dw-button .container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.dw-button .logo {
+}
+.dw-button .icon {
+    color: white;
+}
+.dw-button .text {
+    width: 100%;
+}
+.dw-button .logo img {
+    width: 50px;
+}
+.dw-button .text p {
+    margin: 0px;
+    margin-left: 5px;
+    text-align: center;
+    color: white;
+}
+.dw-button .text p.download {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+.dw-button .text p.name {
+    opacity: 0.5;
+    font-size: 14px;
+}
+.dw-button .text p.size {
+    font-size: 12px;
+}
+.mega {
+    background-color: #e00f1f;
+}
+
+/* Modal */
+#searchModal .modal-close {
+    margin-top: 40px;
+    text-align: center;
+    color: #ffffff;
+}
+#searchModal form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#searchModal form #searchBox {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 10px 10px;
+    border-radius: 5px;
+    width: 70%;
+    text-align: center;
+    height: 50px;
+}

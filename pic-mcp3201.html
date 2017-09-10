@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Microcontrolandos</title>
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">-->
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.0.0-beta.3/dist/css/bootstrap-material-design.min.css" integrity="sha384-k5bjxeyx3S5yJJNRD1eKUMdgxuvfisWKku5dwHQq9Q/Lz6H8CyL89KF52ICpX4cL" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/md.css" />
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+        <script defer src="https://use.fontawesome.com/0a2607915f.js"></script>
+    </head>
+     <body class="home">
+        <!-- Facebook -->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <img src="/img/logo.png" width="120" height="120" />
+                </div>
+                <div class="description exo2">
+                    <p>Microcontrolandos</p>
+                </div>
+                <ul id="navbar" class="nav justify-content-center">
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+                          
+                        
+                        <li class="nav-item "><a class="link-blue" href="/">Home</a></li>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+                          
+                        
+                        <li class="nav-item "><a class="link-blue" href="/about/">Sobre</a></li>
+                    
+                    <li class="nav-item"><a id="searchModalButton" href="#searchModal"><i class="fa fa-2x fa-search"></i></a></li>
+                </ul>                
+            </div>
+        </header>             
+        <div class="container">
+            <div id="content" class="col-md-9">
+                <div class="post-content col-md-12">
+    <div class="row banner">
+        <img src="/img/pic-mcp3201.png">
+    </div>
+    <div class="row">
+
+    </div>
+    <div class="row">
+            
+    </div>
+    <div class="row">
+        <p><a href="http://ww1.microchip.com/downloads/en/DeviceDoc/21290D.pdf">MCP3201</a> é um Conversor A/D de 12 bits com interface SPI.</p>
+
+<h2 id="funcionamento">Funcionamento</h2>
+
+<p>A comunicação com o dispositivo funciona através da interface SPI. Inicialmente habilitamos a comunicação colocando o pino CS em nível lógico baixo. Iremos ler os 15 bits, dos quais 12 bits correspondem ao valor da entrada analógica, começando do bit MSB até o bit LSB. A leitura de cada bit é feita após cada borda de descida do pulso de clock. Por fim, desabilitamos a comunicação colocando o pino CS em nível lógico alto.</p>
+
+<p>O cálculo real da tensão de entrada é: <code class="highlighter-rouge">Vin = ADC * Vref / 4096</code>, sendo <code class="highlighter-rouge">Vin = [V+] – [V-]</code>. Caso <code class="highlighter-rouge">V-</code> seja igual a <code class="highlighter-rouge">0V</code>, <code class="highlighter-rouge">Vin = V+</code>.</p>
+
+<h2 id="funes">Funções</h2>
+
+<blockquote>
+  <p><strong>void MCP3201_Init()</strong> – Inicializa os pinos ligados ao MCP3201.</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>unsigned int MCP3201_Read()</strong> – Lê um inteiro de 12 bits do MCP3201.</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>float MCP3201_Convert(unsigned int raw, float vref)</strong> – Converte o inteiro de 12 bits em um valor correspondente de tensão. raw: inteiro de 12 bits obtido do MCP3201. vref: valor da tensão de referência usado pelo MCP3201.</p>
+</blockquote>
+
+<h2 id="cdigo">Código</h2>
+
+<script src="https://gist.github.com/tiagohm/46053296922d334ff2cac96736240040.js"></script>
+
+ 
+    </div>
+    
+</div>
+
+            </div>
+            <div id="widgets" class="col-md-3">
+
+            </div>
+        </div>
+
+        <!-- Modais -->
+        <div id="searchModal">
+            <div class="close-searchModal modal-close">
+                <i class="fa fa-2x fa-close"></i>
+            </div>
+            <form>
+                <input type="text" class="form-control" id="searchBox" placeholder="Buscar...">
+            </form>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/popper.js@1.12.5/dist/umd/popper.js" integrity="sha384-KlVcf2tswD0JOTQnzU4uwqXcbAy57PvV48YUiLjqpk/MJ2wExQhg9tuozn5A1iVw" crossorigin="anonymous"></script>
+        <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>   -->
+        <script src="https://unpkg.com/bootstrap-material-design@4.0.0-beta.3/dist/js/bootstrap-material-design.js" integrity="sha384-hC7RwS0Uz+TOt6rNG8GX0xYCJ2EydZt1HeElNwQqW+3udRol4XwyBfISrNDgQcGA" crossorigin="anonymous"></script>
+        <script src="/js/animatedModal.min.js"></script>
+        <script src="/js/jquery.pin.js"></script>
+        <script src="/js/main.js"></script>
+</html>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Microcontrolandos</title>
+    <description></description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 10 Sep 2017 20:30:33 -0300</pubDate>
+    <lastBuildDate>Sun, 10 Sep 2017 20:30:33 -0300</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Download do Proteus 8</title>
+        <description>&lt;p&gt;Baixe a últime versão do Proteus.&lt;/p&gt;
+
+&lt;p&gt;A nova versão do Proteus representa mais de três anos de desenvolvimento contínuo e inclui melhorias em cada área do conjunto de software. Um grande trabalho sobre a estrutura do aplicativo em conjunto com o introdução de um banco de dados comum que possibilita um fluxo de trabalho muito mais tranquilo para os usuários enquanto os novos conjunto de recursos economiza tempo e esforço no ciclo de vida do projeto.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/proteus-tela-inicial.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;como-instalar&quot;&gt;Como Instalar?&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Descompacte o arquivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.rar&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Execute o arquivo &lt;code class=&quot;highlighter-rouge&quot;&gt;Proteus Professional 8.5 – SP0 – DEMO.exe&lt;/code&gt; e siga as instruções.&lt;/li&gt;
+  &lt;li&gt;Durante a instalação selecione a licença localmente, use o arquivo &lt;code class=&quot;highlighter-rouge&quot;&gt;License Key.lxk&lt;/code&gt; para adicionar e carregar a licença. Uma janela do gerenciador de licenças deve aparecer. Use &lt;code class=&quot;highlighter-rouge&quot;&gt;Browser for Key File&lt;/code&gt; para carregar a licença e &lt;code class=&quot;highlighter-rouge&quot;&gt;Install&lt;/code&gt; para instalá-la.&lt;/li&gt;
+  &lt;li&gt;Por fim, execute o arquivo &lt;code class=&quot;highlighter-rouge&quot;&gt;Update Proteus 8.5 SP0 DEMO to PRO.exe&lt;/code&gt; para desbloquear a versão demo. No campo de endereço, busque a pasta onde foi instalado o Proteus, geralmente é: &lt;code class=&quot;highlighter-rouge&quot;&gt;C:\Program Files (x86)\Labcenter Electronics\Proteus 8 Professional&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Caso dê algum problema na instalação da licença, você pode reinstalá-la, executando o gerenciador de licenças, &lt;code class=&quot;highlighter-rouge&quot;&gt;LICENSE.EXE&lt;/code&gt;, localizado na pasta &lt;code class=&quot;highlighter-rouge&quot;&gt;C:\Program Files (x86)\Labcenter Electronics\Proteus 8 Professional\BIN\&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;O caminho até a pasta do Proteus pode variar de máquina pra máquina.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;download&quot;&gt;DOWNLOAD&lt;/h3&gt;
+
+&lt;dwb link=&quot;https://goo.gl/TzDE59&quot; name=&quot;Proteus 8.5&quot; size=&quot;301 MB&quot; storage=&quot;mega&quot; /&gt;
+
+</description>
+        <pubDate>Wed, 23 Aug 2017 09:00:00 -0300</pubDate>
+        <link>/proteus-download</link>
+        <guid isPermaLink="true">/proteus-download</guid>
+        
+        
+        <category>proteus</category>
+        
+        <category>download</category>
+        
+      </item>
+    
+      <item>
+        <title>Termômetro Digital com PIC16F877A, LCD e LM45</title>
+        <description>&lt;p&gt;Este é primeiro projeto que fiz, lá em 2012, quando eu ainda estava no SENAI-ITAJUBÁ e antes mesmo de criar o blog Microcontrolandos. Nesta época eu estava aprendendo a programar e me apaixonando cada vez por esta área.&lt;/p&gt;
+
+&lt;p&gt;Este projeto trata-se de um termômetro digital utilizando o PIC16F877A e o sensor de temperatura &lt;a href=&quot;/assets/datasheets/LM45.pdf&quot;&gt;LM45&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Possui 4 escalas de temperatura: Celsius(°C), Fahrenheit(°F) , Rankine(°R) e Kelvin(K), selecionadas através da combinação de 2 botões.&lt;/p&gt;
+
+&lt;h3 id=&quot;cdigo-fonte&quot;&gt;CÓDIGO-FONTE&lt;/h3&gt;
+
+&lt;script src=&quot;https://gist.github.com/tiagohm/dc30b1c3b298341d5552e9b4031eb18a.js&quot;&gt;&lt;/script&gt;
+
+</description>
+        <pubDate>Sun, 20 Aug 2017 09:00:00 -0300</pubDate>
+        <link>/termometro-digital-pic16f877a-lcd-lm45</link>
+        <guid isPermaLink="true">/termometro-digital-pic16f877a-lcd-lm45</guid>
+        
+        
+        <category>pic</category>
+        
+        <category>lcd</category>
+        
+        <category>lm45</category>
+        
+        <category>projeto</category>
+        
+      </item>
+    
+      <item>
+        <title>MikroC: LCD</title>
+        <description>&lt;p&gt;Tutorial sobre como programar um simples display de LCD usando o compilador MikroC PRO for PIC.&lt;/p&gt;
+
+&lt;p&gt;O MikroC possui uma biblioteca para comunicar com os display LCD (HD44780) usando apenas 4 pinos.&lt;/p&gt;
+
+&lt;p&gt;O LCD possui os seguintes pinos:&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;RS&lt;/code&gt;: Este pino indica qual registro deve ser selecionado. &lt;code class=&quot;highlighter-rouge&quot;&gt;0&lt;/code&gt; estamos selecionando o registro de instruções. &lt;code class=&quot;highlighter-rouge&quot;&gt;1&lt;/code&gt; estamos selecionado o registro de dados;&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;RW&lt;/code&gt;: Este pino indica se é uma operação de leitura ou escrita. &lt;code class=&quot;highlighter-rouge&quot;&gt;0&lt;/code&gt; quer dizer que é uma operação de escrita. &lt;code class=&quot;highlighter-rouge&quot;&gt;1&lt;/code&gt; quer dizer que é uma operação de leitura;&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;E&lt;/code&gt;: Este pino indica que estamos habilitando o display para alguma operação de leitura ou escrita. &lt;code class=&quot;highlighter-rouge&quot;&gt;1&lt;/code&gt; indica que estamos habilitando.&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;D4&lt;/code&gt; a &lt;code class=&quot;highlighter-rouge&quot;&gt;D7&lt;/code&gt;: São os pinos dos dados, do menos significativo ao mais significativo;&lt;/p&gt;
+
+&lt;p&gt;Primeiramente precisamos definir quais pinos devem ser conectados:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/mikroc-lcd-esquema.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Para definir que pinos do microcontrolador ligam a que pinos do LCD usamos a diretiva &lt;code class=&quot;highlighter-rouge&quot;&gt;sbit&lt;/code&gt;. &lt;code class=&quot;highlighter-rouge&quot;&gt;sbit&lt;/code&gt; é usado para apelidar um bit de algum registro. Junto com &lt;code class=&quot;highlighter-rouge&quot;&gt;sbit&lt;/code&gt; devemos usar a diretiva &lt;code class=&quot;highlighter-rouge&quot;&gt;at&lt;/code&gt; para determinar qual bit do registro estamos apelidando. Veja um exemplo:&lt;/p&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;pre class=&quot;codehilite&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;sbit&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LCD_RS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;at&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RB4_bit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Neste exemplo estamos chamando o bit &lt;code class=&quot;highlighter-rouge&quot;&gt;4&lt;/code&gt; do registro &lt;code class=&quot;highlighter-rouge&quot;&gt;PORTB&lt;/code&gt; de &lt;code class=&quot;highlighter-rouge&quot;&gt;LCD_RS&lt;/code&gt;. Assim no código podemos simplesmente usar &lt;code class=&quot;highlighter-rouge&quot;&gt;LCD_RS&lt;/code&gt; em vez &lt;code class=&quot;highlighter-rouge&quot;&gt;PORTB.B4&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;No caso da biblioteca LCD, existem nomes pré-definidos que &lt;strong&gt;obrigatoriamente&lt;/strong&gt; devemos usar.&lt;/p&gt;
+
+&lt;p&gt;Estes são os nomes:&lt;/p&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;pre class=&quot;codehilite&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;//Usados nos registros que definem o estado de um pino.
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sbit&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LCD_RS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;at&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RB4_bit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sbit&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LCD_EN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;at&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RB5_bit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sbit&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LCD_D4&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;at&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RB0_bit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sbit&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LCD_D5&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;at&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RB1_bit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sbit&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LCD_D6&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;at&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RB2_bit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sbit&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LCD_D7&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;at&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RB3_bit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;//usados nos registros que definem a direção de um pino (entrada ou saída).
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sbit&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LCD_RS_Direction&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;at&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TRISB4_bit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sbit&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LCD_EN_Direction&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;at&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TRISB5_bit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sbit&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LCD_D4_Direction&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;at&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TRISB0_bit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sbit&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LCD_D5_Direction&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;at&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TRISB1_bit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sbit&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LCD_D6_Direction&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;at&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TRISB2_bit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sbit&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LCD_D7_Direction&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;at&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TRISB3_bit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Feito isso, precisamos de algumas funções para que possamos inicializar e escrever no LCD. Aqui estão elas:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;void Lcd_Init()&lt;/code&gt;: Inicializa o display LCD. Nenhuma outra função desta biblioteca deve vim antes desta função;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;void Lcd_Out(char row, char column, char *text)&lt;/code&gt;: Utilize esta função para escrever um texto no display a partir de uma determinada linha e coluna;
+    * &lt;code class=&quot;highlighter-rouge&quot;&gt;row&lt;/code&gt;: indica em qual linha vamos escrever. Começa a partir do 1;
+    * &lt;code class=&quot;highlighter-rouge&quot;&gt;column&lt;/code&gt;: indica em qual coluna vamos escrever. Começa a partir do 1;
+    * &lt;code class=&quot;highlighter-rouge&quot;&gt;text&lt;/code&gt;: é o texto que queremos escrever. Podemos passar uma String ou alocar um vetor de caracteres.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;void Lcd_Out_Cp(char *text)&lt;/code&gt;: O mesmo que a função anterior, mas o texto é escrito a partir da posição atual do cursor;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;void Lcd_Chr(char row, char column, char out_char)&lt;/code&gt;: Utilize esta função para escrever um caractere no display a partir de uma determinada linha e coluna;
+    * &lt;code class=&quot;highlighter-rouge&quot;&gt;row&lt;/code&gt;: indica em qual linha vamos escrever. Começa a partir do 1;
+    * &lt;code class=&quot;highlighter-rouge&quot;&gt;column&lt;/code&gt;: indica em qual coluna vamos escrever. Começa a partir do 1;
+    * &lt;code class=&quot;highlighter-rouge&quot;&gt;out_char&lt;/code&gt;: é o caractere que queremos escrever.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;void Lcd_Chr_Cp(char out_char)&lt;/code&gt;: O mesmo que a função anterior, mas o caractere é escrito a partir da posição atual do cursor;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;void Lcd_Cmd(char out_char)&lt;/code&gt;: Envia algum comando para o display;&lt;br /&gt;
+    * &lt;code class=&quot;highlighter-rouge&quot;&gt;out_char&lt;/code&gt;: é um valor que devemos passar correspondendo a algum comando.&lt;/p&gt;
+
+&lt;p&gt;Veja a lista de comandos:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_LCD_FIRST_ROW&lt;/code&gt;: Move o cursor para a primeira linha;&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;_LCD_SECOND_ROW&lt;/code&gt;: Move o cursor para a segunda linha;&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;_LCD_THIRD_ROW&lt;/code&gt;: Move o cursor para a terceira linha;&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;_LCD_FOURTH_ROW&lt;/code&gt;: Move o cursor para a quarta linha;&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;_LCD_CLEAR&lt;/code&gt;: Limpa o display;&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;_LCD_RETURN_HOME&lt;/code&gt;: Move o cursor para o início;&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;_LCD_CURSOR_OFF&lt;/code&gt;: Oculta o cursor;&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;_LCD_UNDERLINE_ON&lt;/code&gt;: Exibe o cursor;&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;_LCD_BLINK_CURSOR_ON&lt;/code&gt;: Faz o cursor ficar piscando;&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;_LCD_MOVE_CURSOR_LEFT&lt;/code&gt;: Move o cursor para a esquerda;&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;_LCD_MOVE_CURSOR_RIGHT&lt;/code&gt;: Move o cursor para a direita;&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;_LCD_TURN_ON&lt;/code&gt;: Desliga o display;&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;_LCD_TURN_OFF&lt;/code&gt;: Liga o display;&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;_LCD_SHIFT_LEFT&lt;/code&gt;: Desloca todos os caracteres exibidos para a esquerda;&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;_LCD_SHIFT_RIGHT&lt;/code&gt; Desloca todos os caracteres exibidos para a direita;&lt;/p&gt;
+
+&lt;p&gt;Agora é com vocês!!!&lt;/p&gt;
+</description>
+        <pubDate>Sun, 20 Aug 2017 09:00:00 -0300</pubDate>
+        <link>/mikroc-lcd</link>
+        <guid isPermaLink="true">/mikroc-lcd</guid>
+        
+        
+        <category>mikroc</category>
+        
+      </item>
+    
+      <item>
+        <title>PIC: RDA5807</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://drive.google.com/file/d/0B_-qufAUxAJLWVJmVEdHT1VWMlk/view&quot;&gt;RDA5807P&lt;/a&gt; é um circuito integrado que é capaz de sintonizar emissoras de rádio FM, operando na faixa de 76MHz até 108MHz.&lt;/p&gt;
+
+&lt;h3 id=&quot;caractersticas&quot;&gt;CARACTERÍSTICAS&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Duas bandas de frequência;&lt;/li&gt;
+  &lt;li&gt;Mono ou Stereo;&lt;/li&gt;
+  &lt;li&gt;Indicador de força do sinal (RSSI);&lt;/li&gt;
+  &lt;li&gt;Controle de volume;&lt;/li&gt;
+  &lt;li&gt;Comunicação I2C;&lt;/li&gt;
+  &lt;li&gt;Tensão de alimentação: 5V.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;vantagens&quot;&gt;VANTAGENS&lt;/h3&gt;
+
+&lt;p&gt;Este chip possui as mesmas características do &lt;a href=&quot;https://tiagohm.github.io/microcontrolandos/pic-tea5767&quot;&gt;TEA5767&lt;/a&gt;. A vantagem de utilizá-lo é que eu encontrei uma placa pronta para utilizar, precisando apenas conectar os fios, ao contrário do &lt;a href=&quot;https://tiagohm.github.io/microcontrolandos/pic-tea5767&quot;&gt;TEA5767&lt;/a&gt; que precisa soldar os fios e correr o risco de destruir a plaquinha. Outra vantagem do &lt;code class=&quot;highlighter-rouge&quot;&gt;RDA5807P&lt;/code&gt; é que é possível controlar o volume da saída, mesmo utilizando fones de ouvido, o som é muito alto.&lt;/p&gt;
+
+&lt;h3 id=&quot;funcionamento&quot;&gt;FUNCIONAMENTO&lt;/h3&gt;
+
+&lt;p&gt;Possui 4 registradores internos de 16 bits, utilizados para sua configuração, como a frequência atual, volume, seleção da banda, ativar o modo de busca, entre outros. Para realizar a operação de escrita, basta enviar o endereço do dispositivo (&lt;code class=&quot;highlighter-rouge&quot;&gt;0x20&lt;/code&gt;) e os 8 bytes.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/pic-rda5807-wreg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Para poder sintonizar uma frequência, devemos escrever nos bits &lt;code class=&quot;highlighter-rouge&quot;&gt;CHAN&lt;/code&gt;, setar o bit &lt;code class=&quot;highlighter-rouge&quot;&gt;TUNE&lt;/code&gt; e enviar os todos os bytes. Podemos calcular o valor da frequência através dessa fórmula: &lt;code class=&quot;highlighter-rouge&quot;&gt;F = SPACE * CHAN + (87000 ou 76000)&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Para realizar uma busca, devemos definir a direção da busca (pra cima ou pra baixo) definindo um valor para o bit &lt;code class=&quot;highlighter-rouge&quot;&gt;SEEKUP&lt;/code&gt;. Também devemos setar o bit &lt;code class=&quot;highlighter-rouge&quot;&gt;SEEK&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Também possui 2 registradores de 16 bits, que são utilizados para leitura, informando a frequência atual, a força do sinal captado e contendo vários bits de sinalização.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/pic-rda5807-rreg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;cdigo&quot;&gt;CÓDIGO&lt;/h3&gt;
+
+&lt;script src=&quot;https://gist.github.com/tiagohm/69bfa031786f903471e0dd8fd7e75285.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/pic-rda5807-teste.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 03 Aug 2017 04:00:00 -0300</pubDate>
+        <link>/pic-modulo-rf</link>
+        <guid isPermaLink="true">/pic-modulo-rf</guid>
+        
+        
+        <category>pic</category>
+        
+        <category>rf</category>
+        
+        <category>i2c</category>
+        
+      </item>
+    
+      <item>
+        <title>PIC: MCP3201</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://ww1.microchip.com/downloads/en/DeviceDoc/21290D.pdf&quot;&gt;MCP3201&lt;/a&gt; é um Conversor A/D de 12 bits com interface SPI.&lt;/p&gt;
+
+&lt;h2 id=&quot;funcionamento&quot;&gt;Funcionamento&lt;/h2&gt;
+
+&lt;p&gt;A comunicação com o dispositivo funciona através da interface SPI. Inicialmente habilitamos a comunicação colocando o pino CS em nível lógico baixo. Iremos ler os 15 bits, dos quais 12 bits correspondem ao valor da entrada analógica, começando do bit MSB até o bit LSB. A leitura de cada bit é feita após cada borda de descida do pulso de clock. Por fim, desabilitamos a comunicação colocando o pino CS em nível lógico alto.&lt;/p&gt;
+
+&lt;p&gt;O cálculo real da tensão de entrada é: &lt;code class=&quot;highlighter-rouge&quot;&gt;Vin = ADC * Vref / 4096&lt;/code&gt;, sendo &lt;code class=&quot;highlighter-rouge&quot;&gt;Vin = [V+] – [V-]&lt;/code&gt;. Caso &lt;code class=&quot;highlighter-rouge&quot;&gt;V-&lt;/code&gt; seja igual a &lt;code class=&quot;highlighter-rouge&quot;&gt;0V&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;Vin = V+&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;funes&quot;&gt;Funções&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;void MCP3201_Init()&lt;/strong&gt; – Inicializa os pinos ligados ao MCP3201.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;unsigned int MCP3201_Read()&lt;/strong&gt; – Lê um inteiro de 12 bits do MCP3201.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;float MCP3201_Convert(unsigned int raw, float vref)&lt;/strong&gt; – Converte o inteiro de 12 bits em um valor correspondente de tensão. raw: inteiro de 12 bits obtido do MCP3201. vref: valor da tensão de referência usado pelo MCP3201.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;cdigo&quot;&gt;Código&lt;/h2&gt;
+
+&lt;script src=&quot;https://gist.github.com/tiagohm/46053296922d334ff2cac96736240040.js&quot;&gt;&lt;/script&gt;
+
+</description>
+        <pubDate>Sat, 22 Jul 2017 09:00:00 -0300</pubDate>
+        <link>/pic-mcp3201</link>
+        <guid isPermaLink="true">/pic-mcp3201</guid>
+        
+        
+        <category>pic</category>
+        
+        <category>spi</category>
+        
+        <category>adc</category>
+        
+      </item>
+    
+      <item>
+        <title>Arduino Uno - Proteus</title>
+        <description>&lt;p&gt;Esta é a nova versão do simulador de Arduino Uno R3 para o Proteus. Nessa nova versão modifiquei o design para ficar mais bonito, deixando seus novos projetos mais atraentes.&lt;/p&gt;
+
+&lt;h2 id=&quot;instalao&quot;&gt;Instalação&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Copie o arquivo &lt;code class=&quot;highlighter-rouge&quot;&gt;ARDUINO.LIB&lt;/code&gt; para a pasta:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;C:\Arquivos de Programas\Labcenter Electronics\Proteus 8 Professional\LIBRARY&lt;/code&gt; ou &lt;code class=&quot;highlighter-rouge&quot;&gt;C:\ProgramData\Labcenter Electronics\Proteus 8 Professional\LIBRARY&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Abra o Proteus, e busque o componente por &lt;code class=&quot;highlighter-rouge&quot;&gt;arduino&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/arduino-uno-proteus-pick-devices.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;download&quot;&gt;Download&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/arduino-uno-proteus-lib&quot;&gt;MEGA&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;problemas-e-solues&quot;&gt;Problemas e Soluções&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Caso não apareça no &lt;code class=&quot;highlighter-rouge&quot;&gt;Pick Devices&lt;/code&gt;, tente executar o Proteus como Administrador.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Fri, 21 Jul 2017 09:00:00 -0300</pubDate>
+        <link>/arduino-uno-proteus</link>
+        <guid isPermaLink="true">/arduino-uno-proteus</guid>
+        
+        
+        <category>arduino</category>
+        
+        <category>proteus</category>
+        
+        <category>download</category>
+        
+      </item>
+    
+  </channel>
+</rss>

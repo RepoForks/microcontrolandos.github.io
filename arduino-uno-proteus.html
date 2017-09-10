@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Microcontrolandos</title>
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">-->
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.0.0-beta.3/dist/css/bootstrap-material-design.min.css" integrity="sha384-k5bjxeyx3S5yJJNRD1eKUMdgxuvfisWKku5dwHQq9Q/Lz6H8CyL89KF52ICpX4cL" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/md.css" />
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+        <script defer src="https://use.fontawesome.com/0a2607915f.js"></script>
+    </head>
+     <body class="home">
+        <!-- Facebook -->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <img src="/img/logo.png" width="120" height="120" />
+                </div>
+                <div class="description exo2">
+                    <p>Microcontrolandos</p>
+                </div>
+                <ul id="navbar" class="nav justify-content-center">
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+                          
+                        
+                        <li class="nav-item "><a class="link-blue" href="/">Home</a></li>
+                    
+                        
+                        
+                        
+                        
+                        
+                        
+                          
+                        
+                        <li class="nav-item "><a class="link-blue" href="/about/">Sobre</a></li>
+                    
+                    <li class="nav-item"><a id="searchModalButton" href="#searchModal"><i class="fa fa-2x fa-search"></i></a></li>
+                </ul>                
+            </div>
+        </header>             
+        <div class="container">
+            <div id="content" class="col-md-9">
+                <div class="post-content col-md-12">
+    <div class="row banner">
+        <img src="/img/arduino-uno-v3.png">
+    </div>
+    <div class="row">
+
+    </div>
+    <div class="row">
+            
+    </div>
+    <div class="row">
+        <p>Esta é a nova versão do simulador de Arduino Uno R3 para o Proteus. Nessa nova versão modifiquei o design para ficar mais bonito, deixando seus novos projetos mais atraentes.</p>
+
+<h2 id="instalao">Instalação</h2>
+
+<ol>
+  <li>Copie o arquivo <code class="highlighter-rouge">ARDUINO.LIB</code> para a pasta:
+<code class="highlighter-rouge">C:\Arquivos de Programas\Labcenter Electronics\Proteus 8 Professional\LIBRARY</code> ou <code class="highlighter-rouge">C:\ProgramData\Labcenter Electronics\Proteus 8 Professional\LIBRARY</code>.</li>
+  <li>Abra o Proteus, e busque o componente por <code class="highlighter-rouge">arduino</code>.</li>
+</ol>
+
+<p><img src="/assets/arduino-uno-proteus-pick-devices.png" alt="" /></p>
+
+<h2 id="download">Download</h2>
+
+<p><a href="http://bit.ly/arduino-uno-proteus-lib">MEGA</a></p>
+
+<h2 id="problemas-e-solues">Problemas e Soluções</h2>
+<ol>
+  <li>Caso não apareça no <code class="highlighter-rouge">Pick Devices</code>, tente executar o Proteus como Administrador.</li>
+</ol>
+ 
+    </div>
+    
+</div>
+
+            </div>
+            <div id="widgets" class="col-md-3">
+
+            </div>
+        </div>
+
+        <!-- Modais -->
+        <div id="searchModal">
+            <div class="close-searchModal modal-close">
+                <i class="fa fa-2x fa-close"></i>
+            </div>
+            <form>
+                <input type="text" class="form-control" id="searchBox" placeholder="Buscar...">
+            </form>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/popper.js@1.12.5/dist/umd/popper.js" integrity="sha384-KlVcf2tswD0JOTQnzU4uwqXcbAy57PvV48YUiLjqpk/MJ2wExQhg9tuozn5A1iVw" crossorigin="anonymous"></script>
+        <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>   -->
+        <script src="https://unpkg.com/bootstrap-material-design@4.0.0-beta.3/dist/js/bootstrap-material-design.js" integrity="sha384-hC7RwS0Uz+TOt6rNG8GX0xYCJ2EydZt1HeElNwQqW+3udRol4XwyBfISrNDgQcGA" crossorigin="anonymous"></script>
+        <script src="/js/animatedModal.min.js"></script>
+        <script src="/js/jquery.pin.js"></script>
+        <script src="/js/main.js"></script>
+</html>
