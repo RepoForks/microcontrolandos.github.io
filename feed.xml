@@ -3,10 +3,10 @@
   <channel>
     <title>Microcontrolandos</title>
     <description></description>
-    <link>/</link>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 10 Sep 2017 20:30:33 -0300</pubDate>
-    <lastBuildDate>Sun, 10 Sep 2017 20:30:33 -0300</lastBuildDate>
+    <link>microcontrolandos.github.io/</link>
+    <atom:link href="microcontrolandos.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 10 Sep 2017 21:02:33 -0300</pubDate>
+    <lastBuildDate>Sun, 10 Sep 2017 21:02:33 -0300</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -40,8 +40,8 @@
 
 </description>
         <pubDate>Wed, 23 Aug 2017 09:00:00 -0300</pubDate>
-        <link>/proteus-download</link>
-        <guid isPermaLink="true">/proteus-download</guid>
+        <link>microcontrolandos.github.io/proteus-download</link>
+        <guid isPermaLink="true">microcontrolandos.github.io/proteus-download</guid>
         
         
         <category>proteus</category>
@@ -64,8 +64,8 @@
 
 </description>
         <pubDate>Sun, 20 Aug 2017 09:00:00 -0300</pubDate>
-        <link>/termometro-digital-pic16f877a-lcd-lm45</link>
-        <guid isPermaLink="true">/termometro-digital-pic16f877a-lcd-lm45</guid>
+        <link>microcontrolandos.github.io/termometro-digital-pic16f877a-lcd-lm45</link>
+        <guid isPermaLink="true">microcontrolandos.github.io/termometro-digital-pic16f877a-lcd-lm45</guid>
         
         
         <category>pic</category>
@@ -164,8 +164,8 @@
 &lt;p&gt;Agora é com vocês!!!&lt;/p&gt;
 </description>
         <pubDate>Sun, 20 Aug 2017 09:00:00 -0300</pubDate>
-        <link>/mikroc-lcd</link>
-        <guid isPermaLink="true">/mikroc-lcd</guid>
+        <link>microcontrolandos.github.io/mikroc-lcd</link>
+        <guid isPermaLink="true">microcontrolandos.github.io/mikroc-lcd</guid>
         
         
         <category>mikroc</category>
@@ -212,8 +212,8 @@
 &lt;p&gt;&lt;img src=&quot;/assets/pic-rda5807-teste.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 03 Aug 2017 04:00:00 -0300</pubDate>
-        <link>/pic-modulo-rf</link>
-        <guid isPermaLink="true">/pic-modulo-rf</guid>
+        <link>microcontrolandos.github.io/pic-modulo-rf</link>
+        <guid isPermaLink="true">microcontrolandos.github.io/pic-modulo-rf</guid>
         
         
         <category>pic</category>
@@ -254,8 +254,8 @@
 
 </description>
         <pubDate>Sat, 22 Jul 2017 09:00:00 -0300</pubDate>
-        <link>/pic-mcp3201</link>
-        <guid isPermaLink="true">/pic-mcp3201</guid>
+        <link>microcontrolandos.github.io/pic-mcp3201</link>
+        <guid isPermaLink="true">microcontrolandos.github.io/pic-mcp3201</guid>
         
         
         <category>pic</category>
@@ -290,8 +290,8 @@
 &lt;/ol&gt;
 </description>
         <pubDate>Fri, 21 Jul 2017 09:00:00 -0300</pubDate>
-        <link>/arduino-uno-proteus</link>
-        <guid isPermaLink="true">/arduino-uno-proteus</guid>
+        <link>microcontrolandos.github.io/arduino-uno-proteus</link>
+        <guid isPermaLink="true">microcontrolandos.github.io/arduino-uno-proteus</guid>
         
         
         <category>arduino</category>

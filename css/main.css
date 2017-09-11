@@ -23,6 +23,13 @@ a {
 .fa {
     cursor: pointer;
 }
+#content {
+    float: left;
+}
+#widgets {
+    float: right;
+    text-align: center;
+}
 
 /* Links */
 a.link-blue, a.link-orange {
@@ -122,7 +129,7 @@ a.link-orange:hover {
 .post-card .description {
     color: #666;
     float: left;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 0.4px;
     line-height: 24px;
     margin-bottom: 40px;
